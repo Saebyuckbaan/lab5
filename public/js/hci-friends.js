@@ -5,6 +5,16 @@ $(document).ready(function() {
 	initializePage();
 })
 
+$(".friendname").click ( function ( e ) {
+	
+	console.log("Clicked FUckers");
+	e.preventDefault();
+	var name = $(this).text();
+	name = anagrammedName(name);
+
+	$(this).text(name);
+});
+
 /*
  * Function that is called when the document is ready.
  */
